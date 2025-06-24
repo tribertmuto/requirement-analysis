@@ -156,10 +156,12 @@ Use Case Diagrams are part of the Unified Modeling Language (UML) and are used t
 - Update Hotel Info (Manager)
 - Process Payment (External System)
 - Send Notification
+## Use Case Diagram
 
-# Diagram:
+![ALX Booking Use Case Diagram](images/alx-booking-uc.png)
 
-[Use Case Diagram for Hotel Booking System](alx-booking-uc/alx-booking-uc.png)
+
+
 
 
 
