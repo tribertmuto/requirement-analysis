@@ -158,7 +158,7 @@ Use Case Diagrams are part of the Unified Modeling Language (UML) and are used t
 - Send Notification
 ## Use Case Diagram
 
-![ALX Booking Use Case Diagram](images/alx-booking-uc.png)
+![ALX Booking Use Case Diagram](C:\Users\tribert\Documents\GitHub\requirement-analysis\alx-booking-uc.png)
 
 
 
