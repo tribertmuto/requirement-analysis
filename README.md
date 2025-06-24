@@ -35,5 +35,24 @@ Identifying and addressing potential issues or changes early in the project help
 Accurate and validated requirements ensure that the developed software meets the actual needs of users. This leads to a higher-quality product that performs as expected, ultimately improving user satisfaction and reducing the need for post-deployment fixes.
 
 Understanding the importance of requirement analysis is essential for building reliable, efficient, and user-focused software systems.
+# Key Activities in Requirement Analysis
 
+Requirement Analysis involves several essential activities that ensure software requirements are accurately captured and well-understood. Below are the five key activities, each playing a critical role in the process:
+
+- Requirement Gathering  
+  This involves collecting high-level requirements from stakeholders, clients, and end users. The goal is to understand what problems the software needs to solve and what objectives it must fulfill.
+
+- Requirement Elicitation  
+  Elicitation is a more structured and detailed process of extracting information through techniques such as interviews, questionnaires, observation, brainstorming sessions, and workshops. It focuses on uncovering hidden, implied, or unclear requirements.
+
+- Requirement Documentation  
+  This activity involves formally recording the gathered and elicited requirements in a clear, consistent, and understandable format. Common documents include Software Requirement Specifications (SRS), use cases, and user stories.
+
+- Requirement Analysis and Modeling  
+  Once documented, the requirements are analyzed to identify dependencies, inconsistencies, ambiguities, and conflicts. Modeling techniques like data flow diagrams (DFDs), entity-relationship diagrams (ERDs), and UML models may be used to visualize and structure the requirements.
+
+- Requirement Validation  
+  This step ensures that the documented requirements accurately reflect stakeholder needs and are feasible, testable, and complete. Validation is typically done through reviews, walkthroughs, and prototype evaluations with stakeholders.
+
+Each of these activities contributes to building a strong foundation for successful software design, development, and delivery.
 
