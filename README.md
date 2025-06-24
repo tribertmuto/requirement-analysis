@@ -54,5 +54,82 @@ Requirement Analysis involves several essential activities that ensure software 
 - Requirement Validation  
   This step ensures that the documented requirements accurately reflect stakeholder needs and are feasible, testable, and complete. Validation is typically done through reviews, walkthroughs, and prototype evaluations with stakeholders.
 
-Each of these activities contributes to building a strong foundation for successful software design, development, and delivery.
+Each of these activities contributes to building a strong foundation for successful software design, development, and delivery. 
+#  Hotel Booking System Architecture
+
+This document outlines the system design architecture for a hotel booking application similar to Airbnb, Booking.com, or OYO. The architecture is based on a microservices model to ensure scalability, availability, and maintainability.
+
+
+
+#  Types of Requirements
+
+In designing a robust hotel booking system, it's critical to distinguish between Functional and Non-functional Requirements. These requirements help define what the system should do and how well it should perform.
+
+
+# Functional Requirements
+
+These describe specific features and behaviors the system must support.
+
+Hotel Management Service:
+- Allow hotel managers to create, update, or delete hotel listings.
+- Sync hotel details across master-slave DB architecture.
+- Push updates to CDN and messaging queue (Kafka, RabbitMQ) for downstream services.
+
+Customer Service (Search + Booking):
+- Enable users to search for hotels by location, price, availability, etc.
+- Let users view hotel details, reviews, and photos (fetched from CDN).
+- Process hotel bookings and interact with third-party payment gateways.
+- Update booking status in Redis and Booking DB.
+- Sync booking data with Cassandra for archival.
+
+View Booking Service:
+- Provide users and hotel managers with historical and recent booking data.
+- Fetch recent bookings via Redis and older records via Cassandra.
+
+Notification System:
+- Notify users about booking confirmations, cancellations, and promotional offers.
+- Notify hotel managers upon new bookings.
+
+Streaming & Analytics:
+- Stream event data to Hadoop for business intelligence and user behavior analysis.
+
+---
+
+# Non-functional Requirements
+
+These define the quality attributes of the system  how well it performs, rather than what it does.
+
+Scalability:
+- Use of microservices and load balancers ensures the system can handle high user traffic.
+- ElasticSearch enables high-performance search under heavy load.
+
+Availability & Reliability:
+- Use of master-slave DBs ensures read/write separation, increasing fault tolerance.
+- Redis caching provides high availability for frequently accessed data.
+- Messaging queue (Kafka) helps decouple services, preventing system-wide failure.
+
+Performance:
+- CDN delivers fast access to static content (images, descriptions).
+- Redis and Elasticsearch optimize query response times.
+- Cassandra efficiently handles archival data at scale.
+
+Data Consistency:
+- Database synchronization from master to slave ensures consistency between reads and writes.
+- Kafka ensures that updates flow correctly across services asynchronously.
+
+Security:
+- Secure APIs with authentication for both hotel managers and customers.
+- Payment processing through secure third-party services.
+
+Maintainability:
+- Microservices architecture allows independent deployment and updates.
+- Logging and monitoring via Kafka and Hadoop enable better system diagnostics.
+
+
+
+# Notes
+
+This architecture provides a scalable and resilient backbone for a large-scale booking system and can be extended further for advanced use cases like personalized recommendations, machine learning integration, or dynamic pricing models.
+
+
 
