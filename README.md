@@ -157,10 +157,30 @@ Use Case Diagrams are part of the Unified Modeling Language (UML) and are used t
 - Process Payment (External System)
 - Send Notification
 ![ALX Booking Use Case Diagram](alx-booking-uc.png)
+# Acceptance Criteria
 
+# Importance of Acceptance Criteria in Requirement Analysis
 
+Acceptance criteria are essential components in requirement analysis as they clearly define the conditions that a software product must satisfy to be accepted by stakeholders. They bridge the gap between business needs and technical implementation by outlining specific, measurable, and testable requirements.
 
+Well-defined acceptance criteria:
+- Ensure a shared understanding between developers, testers, and stakeholders.
+- Serve as the basis for test case creation.
+- Help prevent scope creep by defining clear boundaries of a feature.
+- Facilitate user story validation and promote quality assurance through objective testing.
 
+# Example: Acceptance Criteria for the Checkout Feature in a Booking Management System
+
+Feature: Checkout process for a hotel booking
+
+Acceptance Criteria:
+1.The user must be able to view all booking details before confirming checkout.
+2.The system must display the total amount, including taxes and any additional charges.
+3.The checkout button must be disabled until all required guest information is complete.
+4.Upon successful checkout, the booking status must change to “Checked Out” in the system.
+5.A confirmation receipt must be generated and emailed to the guest within 5 minutes.
+6.If payment is pending, the system must prompt the user to complete the transaction before finalizing checkout.
+7.The checkout process must be completed within 2 minutes under normal network conditions.
 
 
 
