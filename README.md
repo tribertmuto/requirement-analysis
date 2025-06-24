@@ -131,5 +131,37 @@ Maintainability:
 
 This architecture provides a scalable and resilient backbone for a large-scale booking system and can be extended further for advanced use cases like personalized recommendations, machine learning integration, or dynamic pricing models.
 
+# Use Case Diagrams
+
+Use Case Diagrams are part of the Unified Modeling Language (UML) and are used to visually represent the interactions between users (actors) and a system. They help clarify what a system is supposed to do and who interacts with it.
+
+# Benefits of Use Case Diagrams:
+- Simplify communication between stakeholders, developers, and designers.
+- Clearly define functional boundaries of a system.
+- Help in identifying system functionalities and external interactions.
+- Serve as a foundation for writing user stories and testing scenarios.
+
+# Actors:
+- Customer: Searches, books, and views bookings.
+- Hotel Manager: Manages hotel listings, views bookings.
+- Payment Gateway: Processes payment transactions.
+- System Admin (optional): Manages users and oversees system health.
+
+# Use Cases:
+- Search Hotel
+- View Hotel Details
+- Make Booking
+- View Bookings
+- Cancel Booking
+- Update Hotel Info (Manager)
+- Process Payment (External System)
+- Send Notification
+
+# Diagram:
+
+[Use Case Diagram for Hotel Booking System](alx-booking-uc/alx-booking-uc.png)
+
+
+
 
 
